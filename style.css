@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: rgb(255,0, 127);
+    background-color: rgb(93,129, 101);
     font-family: Arial, sans-serif;
 }
 
@@ -10,7 +10,7 @@ hl {
 button {
     padding:10px ;
     font-size: 18px;
-    background-color: #e91e63;
+    background-color:  rpg(121,133,67);
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -18,7 +18,7 @@ button {
 }
 
 button:hover{
-   background-color: #c2185b;   
+   background-color: #09310c;   
 }
 
 .result{
