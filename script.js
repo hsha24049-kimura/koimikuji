@@ -11,6 +11,23 @@ const result = document.getElementById("ryousyuu");
 
 button .addEventListener("click",function(){
     const randomNumber = Math.floor(Math.random() * fortunes.length);
+    const resultText  =  fortunes[(randomNumber)];
 
     result.textContent = fortunes[(randomNumber)];
+
+    if(resultText.includes("大吉")){
+        result.style.color = "red";
+    }
+    if(resultText.includes("中吉")){
+        result.style.color = "magenta";
+    }
+    if(resultText.includes("小吉")){
+        result.style.color = "pink";
+    }
+    if(resultText.includes("凶")){
+        result.style.color = "Purple";
+    }
+    if(resultText.includes("大凶")){
+        result.style.color = "black";
+    }
 })
