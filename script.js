@@ -8,6 +8,7 @@ const fortunes =[
  
 const button = document.getElementById("yosihide");
 const result = document.getElementById("ryousyuu");
+const advice = document.getElementById("advice");
 
 button .addEventListener("click",function(){
     const randomNumber = Math.floor(Math.random() * fortunes.length);
@@ -17,17 +18,22 @@ button .addEventListener("click",function(){
 
     if(resultText.includes("大吉")){
         result.style.color = "red";
+        advice.textContent = "よかったね👏"
     }
     if(resultText.includes("中吉")){
         result.style.color = "magenta";
+        advice.textContent = "いっちゃん微妙な運やね"
     }
     if(resultText.includes("小吉")){
         result.style.color = "pink";
+        advice.textContent = "正直、あってないような運よね"
     }
     if(resultText.includes("凶")){
         result.style.color = "Purple";
+        advice.textContent = "こんなところで厄使えてよかったね"
     }
     if(resultText.includes("大凶")){
         result.style.color = "black";
+        advice.textContent = "これ当てたなら逆に運いいんじゃない？"
     }
 })
