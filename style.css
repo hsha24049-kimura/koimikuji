@@ -5,12 +5,12 @@ body {
 }
 
 hl {
-    color: rgb(111, 0, 255);
+    color: rgb(255, 0, 255);
 }
 button {
     padding:10px ;
     font-size: 18px;
-    background-color: #187920;
+    background-color: #6da372;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -18,7 +18,7 @@ button {
 }
 
 button:hover{
-   background-color: #09310c;   
+   background-color: #126119;   
 }
 
 .result{
