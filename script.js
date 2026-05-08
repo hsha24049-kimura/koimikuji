@@ -7,8 +7,11 @@ const fortunes =[
 ];
  
 const button = document.getElementById("yosihide");
+const omikujiImg = document.getElementById("araya");
 const result = document.getElementById("ryousyuu");
 const advice = document.getElementById("advice");
+
+omikujiImg.innerHTML ="<img src='happy.png'>"
 
 button .addEventListener("click",function(){
     const randomNumber = Math.floor(Math.random() * fortunes.length);
@@ -19,21 +22,26 @@ button .addEventListener("click",function(){
     if(resultText.includes("大吉")){
         result.style.color = "red";
         advice.textContent = "よかったね👏"
+omikujiImg.innerHTML ="<img src='daikiti.png'>"
     }
     if(resultText.includes("中吉")){
         result.style.color = "magenta";
         advice.textContent = "いっちゃん微妙な運やね"
+        omikujiImg.innerHTML ="<img src='tyuukiti.png'>"
     }
-    if(resultText.includes("小吉")){
+    if(resultText.includes("末吉")){
         result.style.color = "pink";
         advice.textContent = "正直、あってないような運よね"
+        omikujiImg.innerHTML ="<img src='suekiti.png'>"
     }
     if(resultText.includes("凶")){
         result.style.color = "Purple";
         advice.textContent = "こんなところで厄使えてよかったね"
+        omikujiImg.innerHTML ="<img src='kyou.png'>"
     }
     if(resultText.includes("大凶")){
         result.style.color = "black";
         advice.textContent = "これ当てたなら逆に運いいんじゃない？"
+        omikujiImg.innerHTML ="<img src='daikyou.png'>"
     }
 })
