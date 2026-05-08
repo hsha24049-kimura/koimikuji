@@ -11,7 +11,7 @@ const omikujiImg = document.getElementById("araya");
 const result = document.getElementById("ryousyuu");
 const advice = document.getElementById("advice");
 
-omikujiImg.innerHTML ="<img src='happy.png'>"
+komikujiImg.innerHTML ="<img src='happy.png'>"
 
 button .addEventListener("click",function(){
     const randomNumber = Math.floor(Math.random() * fortunes.length);
