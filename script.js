@@ -22,7 +22,7 @@ button .addEventListener("click",function(){
     if(resultText.includes("大吉")){
         result.style.color = "red";
         advice.textContent = "よかったね👏"
-omikujiImg.innerHTML ="<img src='daikiti.png'>"
+        omikujiImg.innerHTML ="<img src='daikiti.png'>"
     }
     if(resultText.includes("中吉")){
         result.style.color = "magenta";
